@@ -1,0 +1,97 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f0f4f8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+div {
+    text-align: center;
+}
+
+h1 {
+    font-size: 2rem;
+    color: #2c3e50;
+    margin-bottom: 20px;
+}
+
+.input-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+
+input {
+    padding: 10px 16px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    font-size: 1rem;
+    outline: none;
+    width: 220px;
+    transition: border 0.3s;
+}
+
+input:focus {
+    border-color: #4a90e2;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #4a90e2;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background-color: #357abd;
+}
+
+#wheather-info {
+    background: transparent;
+    padding: 30px 40px;
+    border-radius: 16px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+    display: inline-block;
+}
+
+#city-name {
+    font-size: 1.8rem;
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+
+#temperature {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #4a90e2;
+    margin-bottom: 8px;
+}
+
+#descirption {
+    font-size: 1.1rem;
+    color: #7f8c8d;
+    text-transform: capitalize;
+}
+
+#Error-message {
+    color: #e74c3c;
+    font-size: 1rem;
+    margin-top: 10px;
+}
+
+.hidden {
+    display: none;
+}
