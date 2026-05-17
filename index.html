@@ -1,0 +1,39 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="output.css">
+</head>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css">
+<body class="min-h-screen bg-gradient-to-br from-purple-500 to-pink-500 flex flex-col items-center justify-center">
+    <div class="text-center">
+        <div class="flex flex-col">
+            <h1 class="font-semibold text-white text-4xl font-mono mb-1">🌤️WeatherApp</h1>
+            <p class="text-lg font-sans text-slate-300 mb-12">Search any city to get live weather</p>
+        </div>
+        <div class="flex gap-2 justify-center mb-6">
+            <input type="text" id="input-city" placeholder="E.g.Mumbai,Delhi,London.." 
+                class="rounded-xl pl-5 pr-4 py-3 w-72 outline-none text-white bg-black tracking-widest md:w-96 md:py-4 md:text-lg
+           lg:w-[28rem] lg:py-5 lg:text-xl">
+            <button id="wheather-search-button" 
+                class="rounded-xl px-6 py-3 bg-transparent hover:bg-black text-white font-semibold transition-all duration-300 hover:scale-105 tracking-wider border-2 border-white md:px-8 md:py-4 md:text-lg
+           lg:px-10 lg:py-5 lg:text-xl">
+                <i class="ti ti-search"></i> Search
+            </button>
+        </div>
+        <div id="wheather-info" class="hidden backdrop-blur-md bg-white/20 rounded-2xl p-6 shadow-xl border border-white/30">
+            <h2 id="city-name" class="text-3xl font-semibold text-white mb-2 tracking-wide"></h2>
+            <p id="temperature" class="text-xl text-yellow-300 font-semibold mb-1"></p>
+            <p id="descirption" class="text-white/70 italic"></p>
+        </div>
+        <div class="flex flex-col justify-center items-center gap-3">
+            <img class="w-13 h-13" src="https://cdn-icons-png.flaticon.com/512/8635/8635653.png" alt="">
+            <h3>Where are you headed?</h3>
+            <p class="text-wrap text-center">Type a city name above to check real-time weather conditions</p>
+        </div>
+        <p id="Error-message" class="hidden text-red-300 mt-4">City not found. Please try again.</p>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
